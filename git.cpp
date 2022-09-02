@@ -8,7 +8,7 @@ int main(int argc, char** argv) {
 
     system("git add .");
 
-    system("git commit -m commit");
+    system("git commit -m 'Heap Data structure'");
 
     system("git push origin master");
   
