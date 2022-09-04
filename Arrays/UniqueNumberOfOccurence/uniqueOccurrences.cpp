@@ -26,7 +26,7 @@ using namespace std;
 */
 
 // Unique Occurrences
-int uniqueOccurrences(int arr[], int size) {
+bool uniqueOccurrences(int arr[], int size) {
     int ans = 0;
     for(int i = 0; i < size; i++) {
         ans = ans^arr[i];
