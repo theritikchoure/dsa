@@ -2,19 +2,19 @@
 
 using namespace std;
 
-// Paramaterized backtracking
-void printSumUsingPB(int n, int sum) {
+// Paramaterized recursion
+void printSumUsingPR(int n, int sum) {
     if(n == 0) {
         cout << sum << endl;
         return;
     };
-    printSumUsingPB(n-1, sum + n);
+    printSumUsingPR(n-1, sum + n);
 }
 
-// Functional backtracking
-int printSumUsingFB(int n) {
+// Functional recursion
+int printSumUsingFR(int n) {
     if(n == 0) return 0;
-    return n + printSumUsingFB(n-1);
+    return n + printSumUsingFR(n-1);
 }
 
 int main() {
@@ -22,9 +22,9 @@ int main() {
     int n;
     cin>>n;
 
-    printSumUsingPB(n, 0);
+    printSumUsingPR(n, 0);
 
-    cout << printSumUsingFB(n);
+    cout << printSumUsingFR(n);
 
     return 0;
 }
